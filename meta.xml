@@ -1,0 +1,13 @@
+<meta>
+    <min_mta_version client="1.3.0-9.04431" server="1.3.0-9.04570" />
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server" cache="false"/>
+    <script src="global.lua" type="shared"/>
+    <file src="files/mainfont.ttf"/>
+    <file src="files/hand.otf"/>
+    <file src="files/paper.png"/>
+    <file src="files/stripe.png"/>
+    <file src="files/raktar.png"/>
+    <file src="files/switch2.png"/>
+    <file src="files/switch1.png"/>
+</meta>
