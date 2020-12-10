@@ -42,7 +42,7 @@ end);
 addEvent("createObjectHand", true)
 addEventHandler("createObjectHand",getRootElement(),function(player, veh)
     local obj = createObject(2969,0,0,0);
-    exports.cr_bone_attach:attachElementToBone(obj,player,12,0.18,0.12,0,-90,0,-15);
+    exports.bone_attach:attachElementToBone(obj,player,12,0.18,0.12,0,-90,0,-15);
     setPedAnimation(player, "CARRY", "crry_prtial", 0, true, false, true, true);
     setElementData(player,"aruF >> ObjHand",obj);
     toggleControl(player,"fire", false);
@@ -60,7 +60,7 @@ addEventHandler("deleteObjectHand",getRootElement(),function(player, veh)
     local obj = getElementData(player,"aruF >> ObjHand");
     if obj and isElement(obj) then 
         destroyElement(obj);
-        exports.cr_bone_attach:detachElementFromBone(obj)
+        exports.bone_attach:detachElementFromBone(obj)
 		toggleControl(player,"fire", true)
 		toggleControl(player,"sprint", true)
 		toggleControl(player,"crouch", true)
